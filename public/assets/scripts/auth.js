@@ -117,10 +117,12 @@ if(authPage){
 
         const provider = new firebase.auth.FacebookAuthProvider();
 
+        auth.signInWithRedirect(provider);
+        /*
         auth
             .signInWithPopup(provider)
             .then( window.location.href = "/")
             .catch(showAlertError(formAuthLogin));
-
+        */
     })
 }
