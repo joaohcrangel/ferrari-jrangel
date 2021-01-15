@@ -112,4 +112,15 @@ if(authPage){
             .catch(showAlertError(formAuthLogin))
 
     })
+
+    document.querySelector('#login .facebook').addEventListener("click", e => {
+
+        const provider = new firebase.auth.FacebookAuthProvider();
+
+        auth
+            .signInWithPopup(provider)
+            .then( window.location.href = "/")
+            .catch(showAlertError(formAuthLogin));
+
+    })
 }
