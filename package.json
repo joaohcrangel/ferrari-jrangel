@@ -8,13 +8,15 @@
     "sass-build": "sass public/assets/sass/main.scss:public/assets/css/main.css --style=compressed",
     "build": "webpack --mode=production",
     "dev": "webpack serve --watch --content-base public --hot",
-    "chrome": "nightwatch -e chrome"
+    "chrome": "nightwatch -e chrome",
+    "headless": "nightwatch -e headlessChrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^87.0.5",
+    "faker": "^5.1.0",
     "nightwatch": "^1.5.1",
     "sass": "^1.32.4",
     "selenium-server": "^3.141.59",
